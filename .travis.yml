@@ -4,3 +4,6 @@ services:
 
 before_install:
   - docker build -t namkyu/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true namkyu/docker-react npm run test
