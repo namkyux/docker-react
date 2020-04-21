@@ -11,13 +11,13 @@ script:
 deploy: 
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "docker"
-  env: "docker"
+  app: "hackathon"
+  env: "Hackathon-env"
   bucket_name: "elasticbeanstalk-us-east-1-012639386262"
-  bucket_path: "docker"
+  bucket_path: "Hackathon-env"
   on:
     branch: master
   access_key_id: 
-    secure: "$AWS_ACCESS_KEY"
+    secure: $AWS_ACCESS_KEY
   secret_access_key: 
-    secure: "$AWS_SECRET_KEY"
+    secure: $AWS_SECRET_KEY
